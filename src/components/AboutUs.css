@@ -1,0 +1,124 @@
+.about-us-container {
+  padding: 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('C:\Users\Akshara\OneDrive\Desktop\Legal document summarization\legal-summarizer\src\legal.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.about-us-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.about-us-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+.about-us-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-us-container p {
+  font-size: 1.2em;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.faq-section {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  width: 100%;
+}
+
+.faq-section h3 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.faq-item {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #2c3e50;
+}
+
+.arrow {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.faq-answer {
+  margin-top: 10px;
+  color: #444;
+  font-size: 1em;
+  line-height: 1.6;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about-us-container {
+    padding: 20px;
+  }
+
+  .about-us-container h2 {
+    font-size: 2em;
+  }
+
+  .about-us-container p {
+    font-size: 1em;
+  }
+
+  .faq-section {
+    padding: 20px;
+  }
+
+  .faq-question {
+    font-size: 1em;
+  }
+}

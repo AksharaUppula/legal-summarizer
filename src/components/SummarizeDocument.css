@@ -1,0 +1,104 @@
+/* Style for the main container */
+.summarize-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.summarize-container h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.textarea-container {
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  min-height: 150px;
+  background-color: #fefefe;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+.file-input-container {
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+/* Space between summarize and download buttons */
+button + button {
+  margin-left: 12px;
+}
+
+button.download-button {
+  background-color: #007bff;
+  transition: background-color 0.3s ease;
+}
+
+button.download-button:hover {
+  background-color: #0056b3;
+}
+
+.summary-container {
+  margin-top: 30px;
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.summary-container h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.summary-container p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-weight: bold;
+  margin-top: 10px;
+}
